@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="3" name="Regression">
+    <classes>
+      <class name="testNG.First_Class">
+      	<methods>
+	<exclude name ="second"/>
+	</methods>
+	</class>
+
+      <class name="testNG.Second_Class"/>
+      </classes>
+      </test>
+      
+      <test name = "Reg2">
+      <classes>
+      
+      <class name="testNG.Third_Class"/>
+      </classes>
+
+    </test>
+</suite>
